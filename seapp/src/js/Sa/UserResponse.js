@@ -7,7 +7,7 @@ const UserResponse=(props)=>{
 
     return(
         <div>
-            <i>Please tell us which of the following would be best for sentiment
+            <i>Please tell us which of the following would be best for emotion
                 for your statement.
             </i>
             <div className="niceCenter">

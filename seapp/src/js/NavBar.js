@@ -63,7 +63,7 @@ const NavBar = (props)=>{
     return (
         <Parallax
         blur={0} 
-        bgImage={require("../resources/img/gif/threader.gif")} 
+        bgImage={require("../resources/img/gif/seapp.gif")} 
         bgImageStyle={{
             
         }}

@@ -101,7 +101,7 @@ const IndexSA = ()=>{
     
     
         <Parallel
-            text={'Welcome to sentiment analysis'}
+            text={'Welcome to sentence emotion analysis'}
             r= {50}
             g={50}
             b={50}
@@ -117,9 +117,9 @@ const IndexSA = ()=>{
                 <label>Enter the statement to analyze</label>
                 <input className="form-control" 
                 type="text" 
-                maxLength={'400'}
+                maxLength={'250'}
                 name="statement"
-                placeholder="Statement here (Max characters = 400) ..."
+                placeholder="Statement here (Max characters = 250) ..."
                 onChange={
                     (e)=>{
                         setStatement(e.target.value)
@@ -144,7 +144,7 @@ const IndexSA = ()=>{
                 typeof(resFromPy) === 'object' && 
                 <>
                  <div className='niceCenter shadow-lg p-3 mb-5 rounded'>
-                    <h6>The overall sentiment: {resFromPy['res']} {emoji[resFromPy['res'].toLowerCase()]} 
+                    <h6>The overall emotion: {resFromPy['res']} {emoji[resFromPy['res'].toLowerCase()]} 
                         <br />
                         {!ratingSubmitted && <>
                             <br />
@@ -203,7 +203,7 @@ const IndexSA = ()=>{
                             >
                                 <thead>
                                     <tr>
-                                        <th>Model/Sentiment</th>
+                                        <th>Model/Emotion</th>
                                         {
                                             resFromPy['classes'].map(
                                                 (i)=>{

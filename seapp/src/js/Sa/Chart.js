@@ -27,7 +27,6 @@ const Chart = (props)=>{
     const [width, height] = useWindowSize();
     const [showAll, setShowAll] = useState(true);
 
-      
     const buttonClicked =()=> { 
         var tempData = [] 
         for (var i in dataReceived['classes']){

@@ -1,7 +1,6 @@
 import {Link} from 'react-router-dom';
 import { members } from '../db/Members';
 import { links } from '../db/Routing';
-import { logo, bg, ppGif, saGif, prabas, abhay, dipesh, kshitiz } from '../db/img';
 import ScrollWords from './animation/ScrollWords';
 import TrialWords from './animation/TrialWords';
 // import Background from './../resources/img/bg.jpg'
@@ -13,12 +12,6 @@ import Parallel from './animation/Parallel';
 
 import '../css/homepage.css'
 
-const pictures={
-    '075BEI014': prabas,
-    '075BEI015': kshitiz,
-    '075BEI013': dipesh,
-    '075BEI003': abhay,
-}
 
 const Homepage = ()=>{
 
@@ -36,7 +29,7 @@ const Homepage = ()=>{
     'aboutUs': <div className='niceCenter'>
         <dir className='aboutUS'>
             <h2>About Us</h2>
-            <p>We are undergrad students, currently a year III student under the program BE in Electronics, Communication and Information at IOE, Pulchowk.</p>
+            <p>We are students, currently IV year under the program BE in Computer at Kathmandu Engineering College.</p>
         </dir>
         
     </div>,
@@ -44,54 +37,19 @@ const Homepage = ()=>{
          <table className='table' style={{
              color: 'white'
          }}>
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            {abhay} 
-                                            <br />
-                                            Abhay Nepal
-                                            <br />
-                                            075BEI003
-                                        </th>
-                                        <th>
-                                            {dipesh} 
-                                            <br />
-                                            Dipesh Tripati
-                                            <br />
-                                            075BEI013
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            {prabas} 
-                                            <br />
-                                            Gokarna Adhikari
-                                            <br />
-                                            075BEI014
-                                        </th>
-                                        <th>
-                                            {kshitiz} 
-                                            <br />
-                                            Kshitiz Dhakal
-                                            <br />
-                                            075BEI015
-                                        </th>
-                                    </tr>
-                                </tbody>
         </table>
     </div>
     }
 
     const sa ={
         'left':<>
-            {saGif}
         </>,
         'right':<div className=''>
         <dir style={{
-            textAlign: 'right'
+            textAlign: 'left'
         }}>
-            <h2>Sentiment Analysis</h2>
-            <p>We can analyze the sentiment of a english text with more than 90% accuracy !</p>
+            <h2>Sentence Emotion Analysis</h2>
+            <p>We can analyze the emotion of a english text!</p>
         </dir>
         
     </div>
@@ -99,14 +57,13 @@ const Homepage = ()=>{
 
     const pp ={
         'right':<>
-            {ppGif}
         </>,
         'left':<div className=''>
         <dir style={{
-            textAlign: 'left'
+            textAlign: 'right'
         }}>
             <h2>Personality Prediction</h2>
-            <p>We can predict human personality that is true for Quarter of the world population based on more than 70 thousands data !</p>
+            <p>We try to predict human personality!</p>
         </dir>
         
     </div>
@@ -121,7 +78,7 @@ const Homepage = ()=>{
 
             <Parallax
             blur={0} 
-            bgImage={require("../resources/img/gif/threader.gif")} 
+            bgImage={require("../resources/img/gif/seapp.gif")} 
             bgImageAlt="the cat" 
             strength={200}
 
@@ -136,7 +93,7 @@ const Homepage = ()=>{
                         >
                                 <h1>WELCOME</h1>
                                 <h1>TO</h1>
-                                <h1>THREADER !</h1>                        
+                                <h1>OUR PROJECT !</h1>                        
                         </div>
                         {spacing}
                 {spacing}
@@ -221,12 +178,6 @@ const Homepage = ()=>{
                 {spacing}
             </Parallax>
 
-
-            {/* {saGif}
-            {prabas}
-            {kshitiz}
-            {abhay}
-            {dipesh} */}
     </div> 
 
 

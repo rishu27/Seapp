@@ -49,7 +49,7 @@ const IndexHFG = ()=>{
         <dir style={{
             textAlign: 'right'
         }}>
-            <h2>Manage Sentiment Analysis</h2>
+            <h2>Manage Sentence Emotion Analysis</h2>
 
         {
             loadingz &&

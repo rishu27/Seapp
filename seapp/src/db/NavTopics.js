@@ -9,7 +9,7 @@ export const NavTopics = [
         },
         {
             path: '/sa', 
-            label: 'Sentiment Analysis', 
+            label: 'Sentence Emotion Analysis', 
             class: "nav-item", 
             DSlass: "nav-link btn btn-outline-danger"
         },
